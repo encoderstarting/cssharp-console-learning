@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp4
+﻿public static class GradeCheck
 {
-    internal class Class1
+    public static void Run()
     {
+        Console.WriteLine("Введите оценку от 0 до 100: ");
+        string input = Console.ReadLine();
+        bool isNumber = int.TryParse(input, out int score);
+
     }
 }
