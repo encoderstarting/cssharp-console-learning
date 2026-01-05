@@ -13,11 +13,11 @@
             Console.WriteLine("Неккоретная оценка!");
         else if (score > 90)
         {
-            Console.WriteLine("Otlichno")
+            Console.WriteLine("Otlichno");
         }
         else if (score > 75)
         {
-            Console.WriteLine("horosho")
+            Console.WriteLine("horosho");
         }
         else if (score > 60)
         {
