@@ -1,24 +1,11 @@
-﻿Console.WriteLine("Введите возраст: ");
-string input = Console.ReadLine();
-bool isNumber = int.TryParse(input, out int age);
-if (!isNumber)
+﻿
+Console.WriteLine("Выберите что хотите запустить: ");
+string num  = Console.ReadLine();
+if (num == "1")
 {
-    Console.WriteLine("Вы ввели не число!");
+    GradeCheck.Run();
 }
-else if (age < 0)
+else if (num  == "2")
 {
-    Console.WriteLine("Возраст не может быть отрицательным!");
+    Program.run();
 }
-else if (age < 18)
-{
-    Console.WriteLine("Несовершенно летний пользователь!");
-}
-else if (age <= 64)
-{
-    Console.WriteLine("Доступ разрешен!");
-}
-else
-{
-    Console.WriteLine("Пенсионный возраст!");
-}
-    
