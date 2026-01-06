@@ -8,6 +8,7 @@ public static class calculator
 
         if (!double.TryParse(Console.ReadLine(), out double b)) {
             Console.WriteLine("Ошибка ввода");
+            return;
 
         }
         Console.WriteLine("Введите операцию (* / + - ): ");
@@ -15,9 +16,11 @@ public static class calculator
 
         Console.WriteLine("Введите второе число: ");
         if (!double.TryParse(Console.ReadLine(), out double c))
+
         {
             Console.WriteLine("Ошибка ввода");
         }
+        return;
         double result;
         switch (op)
         {
